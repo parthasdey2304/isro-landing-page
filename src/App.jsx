@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Navbar from './Components/Navbar';
-import background1 from "./assets/home.png";
-import background2 from "./assets/pluto.png";
+import background1 from "./assets/backgrounds/first.png";
+import background2 from "./assets/backgrounds/second.png";
+import background3 from "./assets/backgrounds/third.jpg";
 import lander1 from "./assets/landers/first_and_third.png"
 import lander2 from "./assets/landers/second.png"
 import rocket from "./assets/rocket.png";
@@ -40,8 +41,12 @@ function App() {
               </div>
             </div>
 
-            <div className='section w-full h-screen flex-col bg-red-600'>
-              <div className='w-full relative h-screen'></div>
+            <div className='section w-full h-screen flex-col bg-black'>
+              <div className='w-full relative h-screen'>
+                <img src={ rocket } alt="rocket" className='w-[300px] absolute left-[40%]' />
+
+                <div className='w-[450px] h-[300px] bg-blue-600 absolute left-20 '></div>
+              </div>
             </div>
           </ReactFullpage.Wrapper>
         );
