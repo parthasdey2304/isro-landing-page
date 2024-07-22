@@ -16,6 +16,7 @@ function App() {
       render={({ state, fullpageApi }) => {
         return (
           <ReactFullpage.Wrapper>
+            {/* this is the first section of the pagination */}
             <div className='section w-full h-screen flex-col bg-blue-600'>
               <div className='w-full relative h-screen'>
                 <img src={background1} alt="background" className='w-full h-screen object-cover' />
@@ -32,6 +33,7 @@ function App() {
               </div>
             </div>
 
+            {/* this is the second section of the pagination */}
             <div className='section w-full h-screen flex-col'>
               <div className='w-full relative h-screen'>
                 <img src={ background2 } alt="background" className='w-full h-screen object-cover absolute -z-50' />
@@ -41,26 +43,27 @@ function App() {
               </div>
             </div>
 
+            {/* this is the third section of the pagination */}
             <div className='section w-full h-screen flex-col bg-black'>
               <div className='w-full relative h-screen'>
                 <img src={ rocket } alt="rocket" className='w-[300px] absolute left-[40%]' />
 
-                <div className='w-[450px] h-[300px] absolute left-20 top-28 p-10 py-16'>
+                <div className='w-[450px] h-[300px] absolute left-20 top-24 p-10 py-16'>
                   <div className='text-lg font-light uppercase text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem facere ipsum expedita esse mollitia placeat nesciunt provident numquam fugiat.</div>
                   <img src={ infobar } alt="Infobar" className='absolute bottom-0 right-0' />
                 </div>
 
-                <div className='w-[450px] h-[300px] absolute right-20 top-36 p-10 py-16'>
+                <div className='w-[450px] h-[300px] absolute right-20 top-56 p-10 py-16'>
                   <div className='text-lg text-right font-light uppercase text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem facere ipsum expedita esse mollitia placeat nesciunt provident numquam fugiat.</div>
                   <img src={ infobar } alt="Infobar" className='absolute bottom-0 left-0 -scale-x-100' />
                 </div>
 
-                <div className='w-[450px] h-[300px] absolute left-20 bottom-36 p-10 py-16'>
+                <div className='w-[450px] h-[300px] absolute left-20 bottom-44 p-10 py-16'>
                   <div className='text-lg font-light uppercase text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem facere ipsum expedita esse mollitia placeat nesciunt provident numquam fugiat.</div>
                   <img src={ infobar } alt="Infobar" className='absolute bottom-0 right-0' />
                 </div>
 
-                <div className='w-[450px] h-[300px] absolute right-20 bottom-32 p-10 py-16'>
+                <div className='w-[450px] h-[300px] absolute right-20 bottom-12 p-10 py-16'>
                   <div className='text-lg text-right font-light uppercase text-white'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quidem facere ipsum expedita esse mollitia placeat nesciunt provident numquam fugiat.</div>
                   <img src={ infobar } alt="Infobar" className='absolute bottom-0 left-0 -scale-x-100' />
                 </div>
