@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from "../assets/logo.png"
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +10,8 @@ function Navbar() {
 
   return (
     <div className="absolute top-0 w-full h-[100px] text-white flex justify-between items-center px-5 md:px-20">
-      <span className="text-3xl md:text-5xl font-extrabold tracking-wide">ISRO</span>
+      {/* <span className="text-3xl md:text-5xl font-extrabold tracking-wide">ISRO</span> */}
+      <img src={ logo } alt="LOGO" className='w-32' />
       <div className="md:hidden">
         <button onClick={toggleMenu} className="text-white focus:outline-none">
           <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

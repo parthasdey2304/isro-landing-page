@@ -18,7 +18,7 @@ function App() {
         return (
           <ReactFullpage.Wrapper>
             {/* this is the first section of the pagination */}
-            <div className='section w-full h-screen flex-col bg-blue-600'>
+            <div className='section w-full h-screen flex-col bg-black'>
               <div className='w-full relative h-screen'>
                 <img src={background1} alt="background" className='w-full h-screen object-cover' />
                 <Navbar />
@@ -26,12 +26,15 @@ function App() {
                 {/* kutchina */}
                 <motion.div
                   initial={{ x: '-100vw' }}
-                  animate={{ x: 0 }}
+                  animate={{ x: '50%' }}
                   transition={{ type: 'spring', stiffness: 50 }}
-                  className="w-[90%] md:w-[500px] h-[300px] text-white absolute left-5 md:left-20 top-32 md:top-64 flex-col space-y-5 hover:scale-105 duration-300 hover:duration-300"
+                  className="w-[90%] md:w-[500px] h-[500px] text-white absolute left-[50%] md:left-20 top-32 md:top-64 flex-col space-y-5 hover:scale-105 duration-300 hover:duration-300"
                 >
-                  <span className="uppercase text-3xl md:text-5xl font-extrabold tracking-wider">chandrayan 3</span>
-                  <p className="text-sm md:text-md font-semibold">The launch of the Chandrayan-3 took place on July 14, 2023 and injection of 100km circular polar orbit is completed successfully as part of phase one.</p>
+                  <span className="uppercase text-3xl md:text-5xl font-extrabold tracking-wider">SHASHI-PATH</span>
+                  <p className="text-sm md:text-md font-semibold mb-10">NAVIGATIVE THE FUTURE SAFE AND SMART LUNAR EXPLORATION</p>
+                  <div className='w-full flex justify-left'>
+                    <a href="#about" className='px-4 py-2 border border-white backdrop-blur-sm rounded-md'>GET STARTED</a>
+                  </div>
                 </motion.div>
 
                 <motion.img
@@ -62,7 +65,7 @@ function App() {
             </div>
 
             {/* this is the second section of the pagination */}
-            <div className='section w-full h-screen flex-col'>
+            <div id='about' className='section w-full h-screen flex-col'>
               <div className='w-full relative h-screen'>
                 <img src={background2} alt="background" className='w-full h-screen object-cover absolute -z-50' />
                 <div className='w-full h-screen flex justify-center items-center'>
